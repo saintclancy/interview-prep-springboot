@@ -77,3 +77,19 @@
 - Project generated: `curl ...` (see docs/GENERATION_LOG.md)
 - Run: `./mvnw spring-boot:run`
 - Notes: This repo is a playground for Round 1 interview practice — TDD style tests, short REST endpoints, and demo persistence with H2.
+
+## Project Structure
+- controller/
+    - TaskController.java
+- service/
+    - TaskService.java
+- repository/
+    - TaskRepository.java
+- model/
+    - Task.java
+    - TaskDTO.java (optional)
+- exception/
+    - GlobalExceptionHandler.java (optional)
+- config/
+    - WebConfig.java (optional)
+
