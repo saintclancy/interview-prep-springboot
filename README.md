@@ -70,3 +70,10 @@
 - H2 in-memory DB for demo
 
 - Dockerfile for containerization
+
+## How I created this project (quick)
+- Java 17, Maven, Spring Boot
+- Dependencies: spring-boot-starter-web, validation, h2, spring-boot-starter-test
+- Project generated: `curl ...` (see docs/GENERATION_LOG.md)
+- Run: `./mvnw spring-boot:run`
+- Notes: This repo is a playground for Round 1 interview practice — TDD style tests, short REST endpoints, and demo persistence with H2.
