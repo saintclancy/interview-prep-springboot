@@ -1,29 +1,30 @@
-package com.clancy.flexpod.taskapi.model;
+package com.clancy.flexpod.taskapi.dto;
 
-import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 
-@Entity
-@Table(name = "tasks")
-public class Task {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class TaskDTO {
 
-    private Long id;
+    private long id;
+
+    @NotBlank(message = "title is required")
     private String title;
+
     private Boolean completed;
 
-    public Task(){}
+    public TaskDTO() {}
 
-    public Task(String title, Boolean completed) {
+    public TaskDTO(String title, Boolean completed) {
         this.title = title;
         this.completed = completed;
     }
 
-    public Long getId() {
+    // Getters & Setters
+
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
